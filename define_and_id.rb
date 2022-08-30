@@ -5,23 +5,46 @@
 # The downcase method is called on the string object "Hello World"
 # No arguments are passed; downcase has one clear job which is to lowercase all letters that exist in the String
 # The return value is "hello world"
-"Hello World".downcase
+p "Hello World".downcase
 
 # YOU DO the rest:
 
+=begin
+The include? method is called on the string object "Hello World".
+There is one argument to pass, "Hello".
+The job of the method is to determine whether the argument is in the object.
+The return value is true.
+=end
+p "Hello World".include?("Hello")
 
-"Hello World".include?("Hello")
+=begin
+The end_with? method is called on the string object "Hellow World".
+There is gone argument to pass, "Hello"
+The job of the method is to determine whether object string ends with the argument.
+Does "Hello World" have "Hello" at the end?
+The return value is false as the string object ends with "World".
+=end
+p "Hello World".end_with?("Hello")
 
+=begin
+The end_with? method is called on the string object "Hello World".
+There is gone argument to pass, "rld".
+The job of the method is to determine whether the object string ends with the argument.
+Does "Hello World" have "rld" at the end?
+The return value is true as the string object ends with "World".
+=end
+p "Hello World".end_with?("rld")
 
-"Hello World".end_with?("Hello")
+=begin
+The even? method is called on the integer object, "12".
+No arguments are passed; the job of even? is to determine whether that integer object is even.
+The return value is true.
+=end
+p 12.even?
 
-
-"Hello World".end_with?("rld")
-
-
-12.even?
-
-
-18.next
-
-
+=begin
+The 'next' method is called on the integer object, "18".
+No arguments are passed' the job of 'next' is to relay the next number in this series.
+The return value is 19.
+=end
+p 18.next
