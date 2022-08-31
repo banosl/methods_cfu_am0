@@ -16,8 +16,6 @@ p fact_about_beer_brewing.reverse
 p fact_about_beer_brewing.length
 
 
-
-
 # =================================
 # PART 2
 
@@ -56,3 +54,21 @@ The return value is "_11am"
 =end
 
 # 2: Do some research (either testing out with your own code or Googling) to build an understanding of what the `!` does, when at the end of a method name. Show your understading by providing an example and writing an explanation.
+
+=begin
+The '!' added to the end of a method is like a note for the method that says 'tell me if this doesn't change anything'.
+So its function is essentially to do the method and provide feedback about it. There are two options for feedback.
+When the method works, it just returns the changed string. When the method doesn't change anything, it returns with 'nil'.
+
+When a '!' isn't used and the method doesn't change anything then the program will just retun the unchanged string.
+
+Example:
+=end
+
+p "watermelon".squeeze
+
+# This will return "watermelon". Nothing was changed about it.
+
+p "watermenlon".squeeze!
+
+# This will return 'nil'. Nothing was changed and the '!' is giving that feedback.
